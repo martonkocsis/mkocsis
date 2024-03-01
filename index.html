@@ -2,21 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bauhaus+93&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Marton Kocsis - Design Consultant</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="webgl-output"></div> <!-- Container for WebGL / Three.js animation -->
-    <div class="bio-container">
-        <h1>Marton Kocsis</h1>
-        <h2>Design Consultant</h2>
-        <h3>Design System Architect. 3D Modeller & Digital Sculptor.</h3>
-        <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Email: marton@mkocsis.com | Phone: +31 6 33 41 37 44</p>
-        <p>Social links: <a href="https://linkedin.com">LinkedIn</a>, <a href="https://artstation.com">Artstation</a></p>
+<nav class="container-fluid">
+    <ul>
+        <li><strong>Marton Kocsis</strong></li>
+    </ul>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <div class="grid">
+        <section id="about">
+            <hgroup>
+                <h2>Design Consultant</h2>
+                <h3>Design system architect. 3D modeller & digital sculptor.</h3>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <figure>
+                <img src="https://unsplash.com/photos/your_photo_id" alt="Marton Kocsis" />
+                <figcaption>Marton Kocsis</figcaption>
+            </figure>
+            <h3>Connect with me</h3>
+            <p><a href="LinkedIn-link">LinkedIn</a> • <a href="Artstation-link">Artstation</a></p>
+        </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+</main>
+<section aria-label="Contact example">
+    <div class="container">
+        <article>
+            <hgroup>
+                <h2>Contact Me</h2>
+                <h3>Let's create something together.</h3>
+            </hgroup>
+            <form class="grid" action="submitForm()">
+                <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                <button type="submit">Send Message</button>
+            </form>
+        </article>
+    </div>
+</section>
+<footer class="container">
+    <small><a href="mailto:marton@mkocsis.com">marton@mkocsis.com</a> • <a href="tel:+31633413744">+31 6 33 41 37 44</a></small>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
