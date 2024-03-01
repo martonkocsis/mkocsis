@@ -21,3 +21,31 @@ function animate() {
 }
 
 animate();
+
+// Continuation from the previous Three.js setup...
+
+// Raycaster for mouse interaction
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+function onMouseClick(event) {
+    // Calculate mouse position in normalized device coordinates (-1 to +1) for both components
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+
+    // Update the picking ray with the camera and mouse position
+    raycaster.setFromCamera(mouse, camera);
+
+    // Calculate objects intersecting the picking ray
+    const intersects = raycaster.intersectObjects(scene.children);
+
+    if (intersects.length > 0) {
+        // Example interaction: Change the color of the first object intersected
+        intersects[0].object.material.color.set(Math.random() * 0xffffff); // Change to a random color
+    }
+}
+
+// Add event listener for mouse clicks
+window.addEventListener('click', onMouseClick, false);
+
+// The rest of the animation function remains unchanged
