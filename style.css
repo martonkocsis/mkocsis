@@ -1,5 +1,43 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.bio {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.email, .phone {
+    color: #CCCCCC; /* Lighter shade for less emphasis */
+    text-decoration: none; /* Removes underline from email link */
+}
+
+.email:hover, .phone:hover {
+    color: #FFFFFF; /* Changes color on hover for interaction feedback */
 }
