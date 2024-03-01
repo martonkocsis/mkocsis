@@ -1,21 +1,55 @@
-body {
-    background-color: #1D1E20;
-    color: #000101;
-    font-family: 'Roboto', sans-serif;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3 {
-    font-family: 'Bauhaus 93', sans-serif;
-    color: #F4B43F;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #5b4317;
+    color: #ffe9c1;
+    line-height: 1.6;
+}
+
+header, main {
+    padding: 20px;
+}
+
+h1, p {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: #ffd78e;
 }
 
 a {
-    color: #F4B43F;
+    color: #ffd78e;
     text-decoration: none;
 }
 
-.container {
-    padding: 2rem;
+a:hover {
+    text-decoration: underline;
 }
 
-/* Additional styling based on Bauhaus & Extremism aesthetics */
+/* Accessibility Improvements */
+:focus {
+    outline: 3px solid #ffd78e;
+    outline-offset: 2px;
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
