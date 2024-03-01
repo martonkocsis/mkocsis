@@ -1,36 +1,32 @@
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #121212; /* Dark background for contrast */
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
     color: #E8E8E8; /* Light text for high contrast */
-}
-
-/* Following the WCAG AAA guidelines for color contrast */
-.name, .job-title {
-    color: #F4B43F; /* Brand color */
-    font-family: 'Roboto Slab', serif;
-}
-
-.bio, .contact-info {
-    font-size: 18px; /* Ensuring legibility */
-    line-height: 1.5; /* Ensuring readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .bio-container {
-    color: #E8E8E8;
     text-align: center;
-    padding: 20px;
-    font-family: 'Roboto Slab', serif;
+    max-width: 600px;
+    margin-top: 20px;
 }
 
 .bio-container h1, .bio-container h2, .bio-container h3 {
-    margin: 10px;
+    color: #F4B43F; /* Brand color */
 }
 
 .bio-container p, .bio-container a {
-    margin: 5px;
-    font-family: 'Open Sans', sans-serif;
+    color: #E8E8E8; /* Light text */
+}
+
+.bio-container a {
     color: #F4B43F; /* Brand color for links */
+    text-decoration: none;
 }
 
 .bio-container a:hover {
