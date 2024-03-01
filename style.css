@@ -15,3 +15,24 @@ body {
     font-size: 18px; /* Ensuring legibility */
     line-height: 1.5; /* Ensuring readability */
 }
+
+.bio-container {
+    color: #E8E8E8;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.bio-container h1, .bio-container h2, .bio-container h3 {
+    margin: 10px;
+}
+
+.bio-container p, .bio-container a {
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #F4B43F; /* Brand color for links */
+}
+
+.bio-container a:hover {
+    color: #F6C760;
+}
