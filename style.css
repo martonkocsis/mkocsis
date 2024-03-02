@@ -1,46 +1,38 @@
 body {
-    background-color: #121212;
-    color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    padding: 20px;
-}
-
-h1, p {
-    margin: 10px 0;
+header h1 {
+    margin: 0;
 }
 
 header p {
-    color: #F4B43F; /* Accent color for job titles */
+    margin: 5px 0 0;
 }
 
-.bio, .contact-info, .social-links {
-    margin: 20px 0;
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #444;
 }
 
 a {
-    color: #F4B43F;
-    text-decoration: none;
-    display: block; /* Stack links vertically */
-    margin: 10px 0;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
+    color: #0066cc;
 }
