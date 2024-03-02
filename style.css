@@ -1,55 +1,46 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
-
-/* Basic Reset */
-* {
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #5b4317;
-    color: #ffe9c1;
-    line-height: 1.6;
-}
-
-header, main {
+.container {
+    max-width: 800px;
     padding: 20px;
 }
 
 h1, p {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-h1 {
-    font-family: 'Work Sans', sans-serif;
-    color: #ffd78e;
+header p {
+    color: #F4B43F; /* Accent color for job titles */
+}
+
+.bio, .contact-info, .social-links {
+    margin: 20px 0;
 }
 
 a {
-    color: #ffd78e;
+    color: #F4B43F;
     text-decoration: none;
+    display: block; /* Stack links vertically */
+    margin: 10px 0;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Accessibility Improvements */
-:focus {
-    outline: 3px solid #ffd78e;
-    outline-offset: 2px;
-}
-
-/* Responsive Typography */
-@media (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 1.25rem;
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
     }
 }
