@@ -1,35 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marton Kocsis - Design Consultant</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M. Kocsis | Portfolio</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <header>
-        <h1>Marton Kocsis</h1>
-        <p>Design Consultant</p>
-    </header>
-    <main>
-        <section id="bio">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        <section id="job-titles">
-            <h2>What I Do</h2>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="navbar-fixed-top" data-aos="fade-down" data-aos-delay="0">
+        <nav>
             <ul>
-                <li>Design System Architect</li>
-                <li>3D Modeller & Digital Sculptor</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:marton@mkocsis.com">marton@mkocsis.com</a></p>
-            <p>Phone: <a href="tel:+31633413744">+31 6 33 41 37 44</a></p>
-            <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-            <p>Artstation: <a href="#">Artstation Profile</a></p>
-        </section>
-    </main>
+        </nav>
+    </header>
+    
+    <!-- Hero -->
+    <div class="section" id="home">
+        <div class="container">
+            <div class="disply-table">
+                <div class="introduction" data-aos="fade-up" data-aos-delay="200">
+                    <img class="signiture" src="img/signiture.svg" alt="signiture"/>
+                    <h1>Digital Product Designer</h1> 
+                    <h2 class="body">with extensive knowledge of graphic, web, interface & experience design.</h2>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/mkocsisdesign" id="linkedin" class="social-icon" target="_blank"></a>
+                        <a href="https://dribbble.com/mkocsisdesign" id="dribbble" class="social-icon" target="_blank"></a>
+                        <a href="https://www.behance.net/mkocsisdesign" id="behance" class="social-icon" target="_blank"></a>
+                        <a href="https://www.artstation.com/mkocsisdesign" id="artstation" class="social-icon" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mouse" >
+                    <div class="scroll"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About -->
+    <div class="section" id="about">
+        <div class="container about-me">
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                <h4>01</h4>
+                <h1 class="size-50">About me</h1>
+                <div class="h-50"></div>
+            </div>
+
+            <div class="col-sm-5 about-me-small" data-aos="fade-left" data-aos-delay="200">
+                <div id="profile" class="about-img-div">
+                    <img src="img/about-img.jpg" class="img-responsive" alt="Profile Image" data-aos="fade-up" data-aos-delay="0" />
+                </div>
+                <div class="h-50"></div>
+                <blockquote cite="&mdash;Albert Einstein">
+                    <p>&ldquo;Everything should be made as simple as possible, but not&nbsp;simpler.&rdquo;</p>
+                </blockquote>
+            </div>
+
+            <div class="col-lg-6 col-md-12 float-none">
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <p>My name is Márton Kocsis and I am a digital product designer working in Amsterdam, North Holland. I use my creativity through the problem-solving process of developing purposeful and innovative solutions that embody functional and aesthetic demands based on the needs of the intended&nbsp;user.</p>
+                    <p>I'm a friendly, honest and energetic person. I believe that being organized, precise and determined are the keys to reaching all of my professional and personal goals.</p>
+                    <p>In 1994, I met my first graphical user interface. 10 years later, I made my very first image in Photoshop at age 13. From that moment, it became a hobby.</p>
+                    <p>I studied information technology then eventually I graduated in marketing in 2011. In the next couple of years, along with my curiosity, I discovered and tried many creative fields when I was writing my diploma work in multimedia and branding. Besides my studies, I was also selling my creativity as a hobbyist. </p>
+                    <p>In 2014, I moved to the Netherlands. I got the great opportunity to study more about the creative industry. This period of my career has completely changed my perception about design and aided me to understand better how people perceive the world.</p>
+                    <p>I am constantly looking for new challenges with the same enthusiasm when I was young. I am mainly focused on creating beautiful user interface elements and taking care of user experience problems. I have recently started to study 3D and I am looking forward to seeing what the future holds.</p>
+                    <p>I like to spend my free time with my family and my hobbies.</p>
+                    <p>When it comes to working, I always aim to be precise and accurate. I consider myself focused, hard-working and passionate about design. I like to think outside the box and whenever I can, I take the opportunity to learn something new.</p>
+                    <p>My career goal is to become an acknowledged designer, a member of a team where I can explore more of my creativity and accomplish success with my input.</p>
+                </div>
+                <div class="h-50"></div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                <h3>Key strengths</h3>
+                    <ul>
+                        <li>Creative and critical thinking</li>
+                        <li>Quick learner, keen to learn and improve skills</li>
+                        <li>Punctuality and time-keeping</li>
+                        <li>Strong analytical abilities</li>
+                        <li>Good organization, with attention to detail</li>
+                        <li>Problem-solving and decision-making</li>
+                        <li>Able to take on responsibility</li>
+                        <li>Strong work ethic</li>
+                        <li>Friendly and engaging personality</li>
+                    </ul>
+                </div>
+                <div class="h-50"></div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3>Things I know, use and practice</h3>
+                    <p>Digital Product Design, User Interface Design, User Experience Design, Wireframing, Prototyping, Sketch, Photoshop, Illustrator, InDesign, Desktop Publishing, Retouch, 3D Modelling, 3D Sculpting, Autodesk Maya, ZBrush, HTML, CSS </p>
+                    <div class="h-50"></div>
+                    <button class="btn-ghost" onclick="window.open('img/MartonKocsis.pdf','_blank')">View Resume</button>
+                </div>
+            </div>
+
+            <div class="col-sm-5 col-md-offset-1 about-me-desktop" data-aos="fade-left">
+                <div id="profile" class="about-img-div">
+                    <img src="img/about-img.jpg" class="img-responsive" alt="Profile Image" data-aos="fade-up" data-aos-delay="0" />
+                </div>
+                <div class="h-50"></div>
+                <blockquote cite="&mdash;Albert Einstein">
+                    <p>&ldquo;Everything should be made as simple as possible, but not&nbsp;simpler.&rdquo;</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                <h4>02</h4>
+                <h1 class="size-50">Experience</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay="200">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">January 2017 - Present</p>
+                            <h2>Sr. Graphic Designer</h2>
+                            <h5>Fixico, Amsterdam</h5>
+                            <a class="show-more">Show details!</a>
+                            <div class="collapsible">
+                                <ul>
+                                    <li>Combine user experience design thinking with design execution, to produce usable and intuitive user&nbsp;interfaces.</li>
+                                    <li>Help build out design processes, tools, and&nbsp;culture.</li>
+                                    <li>Collaborate with the rest of the design team to evolve and refine the design system, ensuring visual cohesion and engineering efficiency across all user&nbsp;touchpoints.</li>
+                                    <li>Work closely with the product team to identify research&nbsp;questions.</li>
+                                    <li>Help define and refine user personas, plan and run design research to inform design&nbsp;decisions.</li>
+                                    <li>Create use cases and flow diagrams, and define information&nbsp;hierarchies.</li>
+                                    <li>Determine and design the information architecture for dashboards and applications; what information should go where? Which elements are more important and should be given&nbsp;priority?</li>
+                                    <li>Present and communicate insights to help shape long-term product&nbsp;strategy.</li>
+                                    <li>Communicate design solutions to engineers and&nbsp;stakeholders.</li>
+                                    <li>Create prototypes, wireframes and final&nbsp;designs.</li>
+                                    <li>Prepare design specifications and work with the development team to ensure the specifications are&nbsp;met.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay="200">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">May 2016 - November 2016</p>
+                            <h2>Trainee Graphic Designer</h2>
+                            <h5>Studio MiNSK, Amsterdam</h5>
+                            <a class="show-more">Show details!</a>
+                            <div class="collapsible"> 
+                                <ul>
+                                  <li>Research, collect and edit design materials for motion design&nbsp;projects</li>
+                                  <li>Fix, manipulate and retouch&nbsp;photographs</li>
+                                  <li>Conceptualize visuals based on&nbsp;requirements</li>
+                                  <li>Prepare rough drafts and present&nbsp;ideas</li>
+                                  <li>Work on the layout and visual aesthetics of magazines, online publications and other&nbsp;media</li>
+                                  <li>Prepress</li>
+                                </ul>
+                            </div>            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                <h4>03</h4>
+                <h1 class="size-50">Projects</h1>
+            </div>
+
+            <div class="main-container portfolio-inner clearfix">
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <div class="categories-grid wow fadeInLeft" data-aos="fade-up" data-aos-delay="200">
+                            <nav class="categories">
+                                <ul class="portfolio_filter">
+                                    <li><a href="" class="active" data-filter="*">All</a></li>
+                                    <li><a href="" data-filter=".3d">3D</a></li>
+                                    <li><a href="" data-filter=".product">Product</a></li>
+                                    <li><a href="" data-filter=".UXUI">UXUI</a></li>
+                                    <li><a href="" data-filter=".UI">Interface</a></li>
+                                    <li><a href="" data-filter=".UX">Experience</a></li>
+                                    <li><a href="" data-filter=".graphics">Graphics</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="portfolio_container clearfix" data-aos="fade-up">
+
+                            <!-- Humanoid -->
+                            <div class="col-md-4 col-sm-6 3d">
+                                <a id="human" href="#humanModal" class="portfolio_item"> <img src="img/portfolio/humanoid/human-thumbnail.jpg" alt="Humanoid Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Humanoid</span> <em>Organic Modelling</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Gymtionary -->
+                            <div class="col-md-4 col-sm-6 product UI UX UXUI">
+                                <a id="gym" href="#gymModal" class="portfolio_item"> <img src="img/portfolio/gymtionary/gym-thumbnail.jpg" alt="Gymtionary Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Gymtionary</span> <em>Product Design / UI / UX</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- FOS -->
+                            <div class="col-md-4 col-sm-6 product UI UX UXUI">
+                                <a id="fos" href="#fosModal" class="portfolio_item"> <img src="img/portfolio/fos/fos-thumbnail.jpg" alt="FOS Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>FOS Dashboard</span> <em>Product Design / UI / UX</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Roscoe -->
+                            <div class="col-md-4 col-sm-6 product UI UX UXUI">
+                                <a id="roscoe" href="#roscoeModal" class="portfolio_item"> <img src="img/portfolio/roscoe/roscoe-thumbnail.png" alt="Roscoe Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Roscoe Products</span> <em>Product Design / UI / UX</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Daily UI -->
+                            <div class="col-md-4 col-sm-6 UI">
+                                <a id="ui" href="#uiModal" class="portfolio_item"> <img src="img/portfolio/dailyui/dailyui-thumbnail.jpg" alt="DailyUI Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Daily UI</span> <em>User Interface</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Rethink -->
+                            <div class="col-md-4 col-sm-6 graphics">
+                                <a id="rethink" href="#rethinkModal" class="portfolio_item"> <img src="img/portfolio/rethink/rethink-thumbnail.png" alt="Rethink Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Rethink Magazine</span> <em>Editorial / Graphic Design</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Atlas -->
+                            <div class="col-md-4 col-sm-6 graphics">
+                                <a id="atlas" href="#atlasModal" class="portfolio_item"> <img src="img/portfolio/atlas/atlas-thumbnail.png" alt="Atlas Thumbnail" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Atlas Salt</span> <em>Package / Graphic Design</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="col-md-12" data-aos="fade-up">
+                <h4>04</h4>
+                <h1 class="size-50">Contact  me</h1>
+                <div class="h-50"></div>
+                <h3>I'm happy to answer your questions.</h3>
+                <p><strong>+31 6 33 41 37 44</strong>
+                    <br><strong>marton@mkocsis.com</strong>
+                </p>
+                <div class="h-50"></div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/mkocsisdesign" id="linkedin" class="social-icon" target="_blank"></a>
+                    <a href="https://dribbble.com/mkocsisdesign" id="dribbble" class="social-icon" target="_blank"></a>
+                    <a href="https://www.behance.net/mkocsisdesign" id="behance" class="social-icon" target="_blank"></a>
+                    <a href="https://www.artstation.com/mkocsisdesign" id="artstation" class="social-icon" target="_blank"></a>
+                </div>
+                <div class="h-50"></div>
+            </div>
+            <div class="h-50"></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--Project Modals-->
+
+    <!--Humanoid-->
+    <div id="humanModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-humanModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>3D</h4>
+                        <h2>Humanoid</h2>
+                        <div class="h-50"></div>
+                            <p>This study is one of the projects what I'd been working on in the first half of 2020. The focus was on learning the complete flow of organic modelling in Autodesk Maya. For reference, I've picked Jeff Cavaliere fitness guru. While I have been learning the basics of organic modelling, I have also acquired a tremendous amount of knowledge about human&nbsp;anatomy.</p>
+                            <p>Building other creatures beside of perfecting human modelling is already in my&nbsp;plans.</p>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/humanoid/humanoid-01.jpg" alt="Humanoid Wireframe" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/humanoid/humanoid-02.jpg" alt="Humanoid Render" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Gymtionary-->
+    <div id="gymModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-gymModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>Product Design / UI / UX</h4>
+                        <h2>Gymtionary Workout App</h2>
+                        <div class="h-50"></div>
+                        <p>The Gymtionary workout application is one of my pet projects. It has been created only for my entertainment and to stay sane during the Covid-19 lockdown. I'm a big fan of bodyweight workouts, so the simple idea of having versatile workout routines gave me the idea of combining the dictionary with the&nbsp;sport.</p>
+                        <p>The concept of the application is simple. Each letter of the alphabet is an exercise, and each word in the dictionary is a workout&nbsp;session.</p>
+                        <p>I chose minimalism and bicolour design. Building a page for statistics, performance history and other popular workout features are among my future&nbsp;plans.</p>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/gymtionary/gym-flow.jpg" alt="Gymtionary Flow" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOS-->
+    <div id="fosModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-fosModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>Product Design / UI / UX</h4>
+                        <h2>FOS Dashboard</h2>
+                        <div class="h-50"></div>
+                        <p>Project FOS is a dashboard concept design which contains some of the patterns and solutions for the problems what I had to work on&nbsp;lately.</p>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/fos/fos-login.jpg" alt="FOS Dashboard Login" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/fos/fos-overview.jpg" alt="FOS Dashboard Overview" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/fos/fos-details.jpg" alt="FOS Dashboard Details" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Roscoe-->
+    <div id="roscoeModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-roscoeModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>Product Design / UI / UX</h4>
+                        <h2>Roscoe Products</h2>
+                        <div class="h-50"></div>
+                        <p>This small project was an assignment I received very positive feedback for, and I believe it’s worth to include here. My goal was to design something visually appealing and easy-to-use. It was challenging and fun to work with a tight, 6 hours timeframe without any detailed&nbsp;specification.</p>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/roscoe/roscoe-dashboard.png" alt="Roscoe Dashboard" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/roscoe/roscoe-marketplace.png" alt="Roscoe Marketplace" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Daily UI-->
+    <div id="uiModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-uiModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>Product Design / UI / UX</h4>
+                        <h2>Daily UI Challanges</h2>
+                        <div class="h-50"></div>
+                        <p>From time to time, I pick one of the Daily UI challenges and work on it. The tasks are very entertaining, fun and many times hard to&nbsp;complete.</p>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <p>001 - Sign Up</p>
+                        <img src="img/portfolio/dailyui/001.jpg" alt="001 - Sign Up" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>002 - Credit Card Checkout</p>
+                        <img src="img/portfolio/dailyui/002.jpg" alt="002 - Credit Card Checkout" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>003 - Landing Page</p>
+                        <img src="img/portfolio/dailyui/003.jpg" alt="003 - Landing Page" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>004 - Calculator</p>
+                        <img src="img/portfolio/dailyui/004.jpg" alt="004 - Calculator" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>005 - App Icon</p>
+                        <img src="img/portfolio/dailyui/005.jpg" alt="005 - App Icon" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>006 - User Profile</p>
+                        <img src="img/portfolio/dailyui/006.jpg" alt="006 - User Profile" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>007 - Settings</p>
+                        <img src="img/portfolio/dailyui/007.jpg" alt="007 - Settings" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>008 - 404</p>
+                        <img src="img/portfolio/dailyui/008.jpg" alt="008 - 404" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>009 - Music Player</p>
+                        <img src="img/portfolio/dailyui/009.jpg" alt="009 - Music Player" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>011 - Flash Message</p>
+                        <img src="img/portfolio/dailyui/011.jpg" alt="011 - Flash Message" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>012 - E-Commersce Shop</p>
+                        <img src="img/portfolio/dailyui/012.jpg" alt="012 - E-Commersce Shop" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>013 - Direct Messaging</p>
+                        <img src="img/portfolio/dailyui/013.jpg" alt="013 - Direct Messaging" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>014 - Countdown Timer</p>
+                        <img src="img/portfolio/dailyui/014.jpg" alt="014 - Countdown Timer" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <p>015 - OnOff Switch</p>
+                        <img src="img/portfolio/dailyui/015.jpg" alt="015 - Countdown Timer" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Rethink-->
+    <div id="rethinkModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-rethinkModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>Editorial / Graphic Design</h4>
+                        <h2>Rethink Magazine</h2>
+                        <div class="h-50"></div>
+                        <p>The Rethink magazine design project is also one of my exam projects when I was studying design. It was inspired by psychedelic drugs and the importance of open-mindedness. While working on this comprehensive project, I have learned many design methods, tools and techniques. Through the process, besides of editorial design, I have also created logos, advertisements and I have spent tremendous time on researching the topic and gathering assets to be sure it is also mind-blowing to&nbsp;read.</p>
+                        <div class="h-50"></div>
+                        <button class="btn-ghost" onclick="window.open('https://issuu.com/martonkocsis/docs/rethink_publish','_blank')">Read Magazine</button>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/rethink/rethink.png" alt="Rethink Magazin Mockup" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Atlas-->
+    <div id="atlasModal" class="popup-modal">
+        <div id="btn-close-modal" class="close-atlasModal close-popup-modal"> <i class="fas fa-times fa-2x"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-project">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4>Package / Graphic Design</h4>
+                        <h2>Atlas Salt</h2>
+                        <div class="h-50"></div>
+                        <p>Atlas Salt project is also one of my exam projects when I was studying design. The reason to keep it in highlight, because since then I haven't had the chance to work on a project like this on my own from the really beginning to the very end yet. It taught me a lot about working with different materials and folding&nbsp;techniques.</p>
+                        <p>I have spent most of my time researching, sketching, prototyping, and reading about package design and the topic. In the rest, I've designed the brand meanwhile I had been failing miserably during the building process. The glue flaps were too weak and the substrate was too thin to hold the weight of the salt. Correcting what I had to, I've assembled a working version and shot some photos. I don't even need to say, there's still a ton to&nbsp;learn.</p>
+                        <div class="h-50"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/atlas/atlas-complete.png" alt="Atlas Salt Complete Package" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                        <img src="img/portfolio/atlas/atlas-single.png" alt="Atlas Salt Single Package" class="img-responsive portfolio-img" />
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+     <!-- <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script> -->
+    
+    <!--  Main Script  -->
+    <script src="js/custom.js"></script>
+
 </body>
+
 </html>
+
